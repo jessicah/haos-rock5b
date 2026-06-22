@@ -4,6 +4,16 @@ This is a build of HAOS for the ROCK5B, where I have merged the HAOS buildroot w
 the upstream buildroot at tag 2026.05, and added additional supporting configuration
 for the ROCK5B platform, utilising the Linux and U-Boot trees provided by Collabora.
 
+## Building
+
+Follows the same form as other HAOS supported boards:
+
+```bash
+./scripts/enter.sh make rock5b
+unxz -d output/images/haos_green-18.1.dev0.img.xz
+sudo dd if=output/images/haos_green-18.1.dev0.img of=/dev/EMMC bs=1M
+```
+
 ## Modifying U-Boot for SPI Flash
 
 HAOS also requires a modified `u-boot` for the SPI flash, as HAOS includes a patch to
