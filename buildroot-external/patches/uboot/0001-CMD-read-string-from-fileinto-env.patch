@@ -28,17 +28,17 @@ index 322ebe600c5..1908e0e9601 100644
  
  if NET || NET_LWIP
 diff --git a/cmd/Makefile b/cmd/Makefile
-index 4cd13d4fa6e..95b9a883997 100644
+index 25479907..a87f7d02 100644
 --- a/cmd/Makefile
 +++ b/cmd/Makefile
-@@ -176,6 +176,7 @@ obj-$(CONFIG_CMD_SHA1SUM) += sha1sum.o
+@@ -175,6 +175,7 @@ obj-$(CONFIG_CMD_SHA1SUM) += sha1sum.o
  obj-$(CONFIG_CMD_SEAMA) += seama.o
  obj-$(CONFIG_CMD_SETEXPR) += setexpr.o
  obj-$(CONFIG_CMD_SETEXPR_FMT) += printf.o
 +obj-$(CONFIG_CMD_FILEENV) += fileenv.o
  obj-$(CONFIG_CMD_SPI) += spi.o
  obj-$(CONFIG_CMD_STRINGS) += strings.o
- obj-$(CONFIG_CMD_SM3SUM) += sm3sum.o
+ obj-$(CONFIG_CMD_SMBIOS) += smbios.o
 diff --git a/cmd/fileenv.c b/cmd/fileenv.c
 new file mode 100644
 index 00000000000..7a259e21352
